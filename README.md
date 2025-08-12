@@ -20,10 +20,10 @@ dependencies: [
 |-|-|
 |loadModel(progress:completion:)|載入模型 (從快取 or 網路重新下載)|
 |loadModel()|載入模型 (從快取 or 網路重新下載)|
-|classifyNumber(image:result:)|分析圖片是什麼物體|
-|classifyNumber(image:)|分析圖片是什麼物體|
-|classifyNumbers(image:standardValue:result:)|分析圖片哪一些物體們的機率|
-|classifyNumbers(image:standardValue:)|分析圖片哪一些物體們的機率|
+|classifyNumber(image:result:)|分析圖片是什麼數字|
+|classifyNumber(image:)|分析圖片是什麼數字|
+|classifyNumbers(image:standardValue:result:)|分析圖片哪一些數字們的機率|
+|classifyNumbers(image:standardValue:)|分析圖片哪一些數字們的機率|
 
 ### Example
 ```swift
