@@ -1,0 +1,33 @@
+{
+  "originHash" : "4a1eb2913ac6c6a698c8b814d2c388d56d841f25b2c0f5d93651e2c925e9b21e",
+  "pins" : [
+    {
+      "identity" : "wwmachinelearning_mnist",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWMachineLearning_MNIST",
+      "state" : {
+        "revision" : "bdae53da668122c97628b2492bd17a41f9096092",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "wwmachinelearning_resnet50",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWMachineLearning_Resnet50",
+      "state" : {
+        "revision" : "84bcbe433cd6627e142cfe085c4b77967d67fe88",
+        "version" : "1.1.2"
+      }
+    },
+    {
+      "identity" : "wwnetworking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/William-Weng/WWNetworking",
+      "state" : {
+        "revision" : "141032e2894b6b25fabfbaef97e96363a2027f33",
+        "version" : "1.8.0"
+      }
+    }
+  ],
+  "version" : 3
+}
