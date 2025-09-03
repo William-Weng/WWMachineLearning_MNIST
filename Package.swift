@@ -15,7 +15,7 @@ let package = Package(
         .package(url: "https://github.com/William-Weng/WWMachineLearning_Resnet50", from: "1.1.3")
     ],
     targets: [
-        .target(name: "WWMachineLearning_MNIST", dependencies: ["WWMachineLearning_Resnet50"]),
+        .target(name: "WWMachineLearning_MNIST", dependencies: ["WWMachineLearning_Resnet50"], resources: [.copy("Privacy")]),
     ],
     swiftLanguageVersions: [
         .v5

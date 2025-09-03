@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/William-Weng/WWMachineLearning_MNIST",
       "state" : {
-        "revision" : "bdae53da668122c97628b2492bd17a41f9096092",
-        "version" : "1.0.0"
+        "revision" : "e719c497db4fc79bf92885699bab1a6eb2f75e3c",
+        "version" : "1.0.1"
       }
     },
     {
