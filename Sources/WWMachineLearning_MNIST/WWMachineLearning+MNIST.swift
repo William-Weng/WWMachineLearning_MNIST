@@ -18,7 +18,9 @@ extension WWMachineLearning {
         
         public static let shared = MNIST()
         
-        private var model: MLModel?
+        public private(set) var model: MLModel?
+
+        private let urlString = "https://ml-assets.apple.com/coreml/models/Image/DrawingClassification/MNISTClassifier/MNISTClassifier.mlmodel"
 
         private init() {}
     }
@@ -32,35 +34,13 @@ public extension WWMachineLearning.MNIST {
     ///   - progress: 下載進度
     ///   - completion: Result<URL, Error>
     func loadModel(progress: ((WWNetworking.DownloadProgressInformation) -> Void)? = nil, completion: @escaping (Result<URL, Error>) -> Void) {
-        
-        let modelUrlString = "https://ml-assets.apple.com/coreml/models/Image/DrawingClassification/MNISTClassifier/MNISTClassifier.mlmodel"
-        
-        guard let modelUrl = URL(string: modelUrlString),
-              let folder = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first
-        else {
-            return completion(.failure(WWMachineLearning.CustomError.notURL))
-        }
-        
-        let compiledModelUrl = WWMachineLearning.shared.compiledModelUrl(modelUrl, for: folder)
-        
-        switch WWMachineLearning.shared.createFolder(folder) {
-        case .failure(let error): completion(.failure(error))
-        case .success(_): break
-        }
-        
-        if FileManager.default._fileExists(with: compiledModelUrl).isExist {
-            switch WWMachineLearning.shared.cacheModel(with: compiledModelUrl) {
-            case .failure(let error): return completion(.failure(error))
-            case .success(let model): self.model = model; return completion(.success(compiledModelUrl))
-            }
-        }
-        
-        WWMachineLearning.shared.downloadModel(modelUrl: modelUrl, folder: folder) { info in
-            progress?(info)
-        } completion: { downloadResult in
-            switch downloadResult {
+                
+        WWMachineLearning.shared.loadModel(urlString: urlString) { downloadProgress in
+            progress?(downloadProgress)
+        } completion: { result in
+            switch result {
             case .failure(let error): completion(.failure(error))
-            case .success(let model): self.model = model; completion(.success(compiledModelUrl))
+            case .success(let model, let url): self.model = model; completion(.success(url))
             }
         }
     }

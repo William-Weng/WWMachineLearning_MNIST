@@ -12,7 +12,7 @@ let package = Package(
         .library(name: "WWMachineLearning_MNIST", targets: ["WWMachineLearning_MNIST"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/William-Weng/WWMachineLearning_Resnet50", from: "1.1.2")
+        .package(url: "https://github.com/William-Weng/WWMachineLearning_Resnet50", from: "1.1.3")
     ],
     targets: [
         .target(name: "WWMachineLearning_MNIST", dependencies: ["WWMachineLearning_Resnet50"]),

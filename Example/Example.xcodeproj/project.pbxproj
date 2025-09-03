@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8144A7782E4B32A800422B29 /* WWMachineLearning_Resnet50 in Frameworks */ = {isa = PBXBuildFile; productRef = 8144A7772E4B32A800422B29 /* WWMachineLearning_Resnet50 */; };
-		8144A7872E4B410500422B29 /* WWMachineLearning_MNIST in Frameworks */ = {isa = PBXBuildFile; productRef = 8144A7862E4B410500422B29 /* WWMachineLearning_MNIST */; };
 		817567FC2CA2C2B400B24577 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817567FB2CA2C2B400B24577 /* AppDelegate.swift */; };
 		817568002CA2C2B400B24577 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817567FF2CA2C2B400B24577 /* ViewController.swift */; };
 		817568032CA2C2B400B24577 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817568012CA2C2B400B24577 /* Main.storyboard */; };
@@ -16,6 +15,7 @@
 		817568082CA2C2B500B24577 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 817568062CA2C2B500B24577 /* LaunchScreen.storyboard */; };
 		817568142CA2C33600B24577 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817568122CA2C33600B24577 /* Constant.swift */; };
 		817568152CA2C33600B24577 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817568132CA2C33600B24577 /* Extension.swift */; };
+		81C5710D2E67DC58000515A7 /* WWMachineLearning_MNIST in Frameworks */ = {isa = PBXBuildFile; productRef = 81C5710C2E67DC58000515A7 /* WWMachineLearning_MNIST */; };
 		81C7DEB52E4B307800DBB0F1 /* WWMachineLearning_MNIST in Frameworks */ = {isa = PBXBuildFile; productRef = 81C7DEB42E4B307800DBB0F1 /* WWMachineLearning_MNIST */; };
 		81E58D532E4B29F8002F0376 /* WWMachineLearning_MNIST in Frameworks */ = {isa = PBXBuildFile; productRef = 81E58D522E4B29F8002F0376 /* WWMachineLearning_MNIST */; };
 		81E58D562E4B2AD1002F0376 /* WWMachineLearning_MNIST in Frameworks */ = {isa = PBXBuildFile; productRef = 81E58D552E4B2AD1002F0376 /* WWMachineLearning_MNIST */; };
@@ -43,7 +43,7 @@
 				81E58D532E4B29F8002F0376 /* WWMachineLearning_MNIST in Frameworks */,
 				81C7DEB52E4B307800DBB0F1 /* WWMachineLearning_MNIST in Frameworks */,
 				81E58D562E4B2AD1002F0376 /* WWMachineLearning_MNIST in Frameworks */,
-				8144A7872E4B410500422B29 /* WWMachineLearning_MNIST in Frameworks */,
+				81C5710D2E67DC58000515A7 /* WWMachineLearning_MNIST in Frameworks */,
 				81E58D592E4B2ADA002F0376 /* WWMachineLearning_Resnet50 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,7 +144,7 @@
 				81E58D582E4B2ADA002F0376 /* WWMachineLearning_Resnet50 */,
 				81C7DEB42E4B307800DBB0F1 /* WWMachineLearning_MNIST */,
 				8144A7772E4B32A800422B29 /* WWMachineLearning_Resnet50 */,
-				8144A7862E4B410500422B29 /* WWMachineLearning_MNIST */,
+				81C5710C2E67DC58000515A7 /* WWMachineLearning_MNIST */,
 			);
 			productName = Example;
 			productReference = 817567F82CA2C2B400B24577 /* Example.app */;
@@ -175,7 +175,7 @@
 			);
 			mainGroup = 817567EF2CA2C2B400B24577;
 			packageReferences = (
-				8144A7852E4B410500422B29 /* XCRemoteSwiftPackageReference "WWMachineLearning_MNIST" */,
+				81C5710B2E67DC58000515A7 /* XCRemoteSwiftPackageReference "WWMachineLearning_MNIST" */,
 			);
 			productRefGroup = 817567F92CA2C2B400B24577 /* Products */;
 			projectDirPath = "";
@@ -442,12 +442,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8144A7852E4B410500422B29 /* XCRemoteSwiftPackageReference "WWMachineLearning_MNIST" */ = {
+		81C5710B2E67DC58000515A7 /* XCRemoteSwiftPackageReference "WWMachineLearning_MNIST" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/William-Weng/WWMachineLearning_MNIST";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.0.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -457,9 +457,9 @@
 			isa = XCSwiftPackageProductDependency;
 			productName = WWMachineLearning_Resnet50;
 		};
-		8144A7862E4B410500422B29 /* WWMachineLearning_MNIST */ = {
+		81C5710C2E67DC58000515A7 /* WWMachineLearning_MNIST */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8144A7852E4B410500422B29 /* XCRemoteSwiftPackageReference "WWMachineLearning_MNIST" */;
+			package = 81C5710B2E67DC58000515A7 /* XCRemoteSwiftPackageReference "WWMachineLearning_MNIST" */;
 			productName = WWMachineLearning_MNIST;
 		};
 		81C7DEB42E4B307800DBB0F1 /* WWMachineLearning_MNIST */ = {

@@ -11,7 +11,7 @@
 
 ```bash
 dependencies: [
-    .package(url: "https://github.com/William-Weng/WWMachineLearning_MNIST.git", .upToNextMajor(from: "1.0.0"))
+    .package(url: "https://github.com/William-Weng/WWMachineLearning_MNIST.git", .upToNextMajor(from: "1.0.1"))
 ]
 ```
 
